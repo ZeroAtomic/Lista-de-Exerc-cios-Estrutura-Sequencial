@@ -132,9 +132,19 @@ else:
     
 18. Faça um programa que calcule o salário com descontos: IR (11%), INSS (8%) e Sindicato (5%).
 Mostrar salário bruto e líquido.
-19. Uma loja de tintas precisa calcular quantas latas comprar. 1 litro cobre 3 m2, lata tem 18 litros e
+salar = float(input("Informe o salario: "))
+ir = salar * 11 /100
+inss = salar * 8 /100
+sind = salar * 5 /100
+
+salarL = salar - ir - inss - sind
+
+print(f'seu salario Bruto: {salar:.2f}')
+print(f'seu salario liquido: {salarL:.2f}')
+
+20. Uma loja de tintas precisa calcular quantas latas comprar. 1 litro cobre 3 m2, lata tem 18 litros e
 custa R$80.
-20. Versão avançada da tinta: 1 litro cobre 6 m2. Lata 18L (R$80) e galão 3,6L (R$25). Calcular
+21. Versão avançada da tinta: 1 litro cobre 6 m2. Lata 18L (R$80) e galão 3,6L (R$25). Calcular
 melhor opção com 10% de folga.
-21. Faça um programa que calcule o tempo aproximado de download de um arquivo dado seu
+22. Faça um programa que calcule o tempo aproximado de download de um arquivo dado seu
 tamanho (MB) e velocidade da internet (Mbps).
