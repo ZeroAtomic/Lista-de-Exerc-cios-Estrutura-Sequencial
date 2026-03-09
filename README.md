@@ -65,20 +65,76 @@ c = 5 * ((f - 32) / 9)
 print(f"A temperatura em Celsius é: {c:.2f}°C")
 
 
-
- 10. Faça um programa que peça a temperatura em Celsius e converta para Fahrenheit. Fórmula: F =
+ 11.  Faça um programa que peça a temperatura em Celsius e converta para Fahrenheit. Fórmula: F =
 (C * 9/5) + 32.
- 11. Peça dois números inteiros e um número real. Calcule: (a) o produto do dobro do primeiro com
-metade do segundo; (b) a soma do triplo do primeiro com o terceiro; (c) o terceiro elevado ao cubo.
-12. Converta um valor em Gigabytes para Megabytes. Fórmula: MB = GB * 1024.
-13. Converta um valor em Gigabytes para Megabytes e Kilobytes.
-14. Um pescador paga multa de R$4,00 por quilo excedente caso ultrapasse 50 kg de peixes. Faça
+c = float(input())
+F = (c * 9/5) + 32.
+print(f'temperatura: {F}')
+
+
+ 12. Peça dois números inteiros e um número real. Calcule: (a) o produto do dobro do primeiro com
+ metade do segundo; (b) a soma do triplo do primeiro com o terceiro; (c) o terceiro elevado ao cubo.
+
+a = int(input())
+b = int(input())
+c = float(input())
+a1 = a
+
+a *= 2
+b /= 2
+r = a * b
+
+a1 *= 3
+a1 += c
+
+cubo = c ** 3
+
+print(f'Qualculo (A) {r}')
+print(f'Qualculo (b) {a1}')
+print(f'Qualculo (c) {cubo}')
+
+
+
+
+14. Converta um valor em Gigabytes para Megabytes. Fórmula: MB = GB * 1024.
+GB = int(input())
+
+MB = GB * 1024.
+
+print(f'Qualculo {MB}')
+
+
+
+15. Converta um valor em Gigabytes para Megabytes e Kilobytes.
+
+GB = int(input())
+
+MB = GB * 1024
+KB = MB * 1024
+
+print(f'Mega {MB}')
+print(f'Kilo {KB}')
+
+
+16. Um pescador paga multa de R$4,00 por quilo excedente caso ultrapasse 50 kg de peixes. Faça
 um programa que calcule excesso e multa.
-15. Faça um programa que calcule o salário com descontos: IR (11%), INSS (8%) e Sindicato (5%).
+
+quilo = float(input("Informe o quilo: "))
+qi = quilo
+if quilo > 50:
+    quilo -= 50
+    quilo *= 4
+    print(f'Kilos {qi}')
+    print(f'multa de R${quilo:.2f} Reais')
+else:
+    print(f'quilo: {quilo}')
+    print('Sem multa')
+    
+18. Faça um programa que calcule o salário com descontos: IR (11%), INSS (8%) e Sindicato (5%).
 Mostrar salário bruto e líquido.
-16. Uma loja de tintas precisa calcular quantas latas comprar. 1 litro cobre 3 m2, lata tem 18 litros e
+19. Uma loja de tintas precisa calcular quantas latas comprar. 1 litro cobre 3 m2, lata tem 18 litros e
 custa R$80.
-17. Versão avançada da tinta: 1 litro cobre 6 m2. Lata 18L (R$80) e galão 3,6L (R$25). Calcular
+20. Versão avançada da tinta: 1 litro cobre 6 m2. Lata 18L (R$80) e galão 3,6L (R$25). Calcular
 melhor opção com 10% de folga.
-18. Faça um programa que calcule o tempo aproximado de download de um arquivo dado seu
+21. Faça um programa que calcule o tempo aproximado de download de um arquivo dado seu
 tamanho (MB) e velocidade da internet (Mbps).
