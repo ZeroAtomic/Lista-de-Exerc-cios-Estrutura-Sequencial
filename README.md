@@ -7,25 +7,57 @@ Lista de Exercícios feitas por mim.
 
 3. Faça um programa que peça um número e então mostre a mensagem: O número informado foi
 [número].
-R: 
+
    nome = input("informe um numero: 3")
 print(f'O Numero informado foi {nome}')
 
  5. Faça um programa que peça dois números e imprima a soma.
-R:  
+ 
   n1 = int(input("informe um numero: "))
   n2 = int(input("informe outro numero: "))
   soma = n1 + n2
   print(f'A soma dos dois numeros foi: {soma}')
 
     
- 7. Faça um programa que peça as 4 notas bimestrais e mostre a média.
- 8. Faça um programa que converta metros para centímetros.
- 9. Faça um programa que peça o raio de um círculo, calcule e mostre sua área.
- 10. Faça um programa que calcule a área de um quadrado e mostre o dobro desta área.
- 11. Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no
+7. Faça um programa que peça as 4 notas bimestrais e mostre a média.
+
+n1 = int(input("informe a nota : "))
+n2 = int(input("informe a nota : "))
+n3 = int(input("informe a nota : "))
+n4 = int(input("informe a nota : "))
+result = (n1 + n2 + n3 + n4) / 4
+print(f'Nota final é: {result}')
+
+  
+9. Faça um programa que converta metros para centímetros.
+n1 = int(input("informe quantos metros: "))
+result = 100 * n1
+print(f'metros em centimetros: {result}')
+
+
+10. Faça um programa que peça o raio de um círculo, calcule e mostre sua área.
+
+n1 = int(input("informe o Raio do circulo: "))
+result = 3.14 * n1 ** 2
+print(f'A aréa do circulo é: {result}')
+  
+12. Faça um programa que calcule a área de um quadrado e mostre o dobro desta área.
+n1 = int(input("informe o lado do quadrado: "))
+n2 = int(input("informe o lado do quadrado: "))
+result = n1 * n1
+result *= 2
+print(f'a area dobrada do quadrado é: {result}')
+
+ 14. Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no
 mês. Calcule e mostre o salário total do mês.
- 12. Faça um programa que peça a temperatura em Fahrenheit e converta para Celsius. Fórmula: C = 5
+
+n1 = float(input("quanto ganha por hora "))
+n2 = int(input("quantas horas vc trabalha no mes "))
+result = n1 * n2
+print(f'a area do quadrado é: {result}')
+
+
+ 16. Faça um programa que peça a temperatura em Fahrenheit e converta para Celsius. Fórmula: C = 5
 * ((F - 32) / 9).
  10. Faça um programa que peça a temperatura em Celsius e converta para Fahrenheit. Fórmula: F =
 (C * 9/5) + 32.
