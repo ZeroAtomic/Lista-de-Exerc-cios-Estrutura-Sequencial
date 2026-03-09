@@ -59,6 +59,13 @@ print(f'a area do quadrado é: {result}')
 
  16. Faça um programa que peça a temperatura em Fahrenheit e converta para Celsius. Fórmula: C = 5
 * ((F - 32) / 9).
+
+f = float(input("Digite a temperatura em Fahrenheit: "))
+c = 5 * ((f - 32) / 9)
+print(f"A temperatura em Celsius é: {c:.2f}°C")
+
+
+
  10. Faça um programa que peça a temperatura em Celsius e converta para Fahrenheit. Fórmula: F =
 (C * 9/5) + 32.
  11. Peça dois números inteiros e um número real. Calcule: (a) o produto do dobro do primeiro com
