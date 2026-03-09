@@ -1,4 +1,4 @@
-# Lista-de-Exerc-cios-Estrutura-Sequencial
+# Lista-de-Exercecios-Estrutura-Sequencial
 Lista de Exercícios feitas por mim.
  1. Faça um programa que mostre a mensagem: 'Alô mundo'.
    R:
@@ -144,7 +144,49 @@ print(f'seu salario liquido: {salarL:.2f}')
 
 20. Uma loja de tintas precisa calcular quantas latas comprar. 1 litro cobre 3 m2, lata tem 18 litros e
 custa R$80.
-21. Versão avançada da tinta: 1 litro cobre 6 m2. Lata 18L (R$80) e galão 3,6L (R$25). Calcular
+lata = int(input("Informe quantas latas: "))
+
+quantDetinta = lata * 18
+precolata = lata * 80
+print(f'latas: {lata}')
+print(f'Litros: {quantDetinta}')
+print(f'Preço: {precolata:.2f}')
+
+22. Versão avançada da tinta: 1 litro cobre 6 m2. Lata 18L (R$80) e galão 3,6L (R$25). Calcular
 melhor opção com 10% de folga.
-22. Faça um programa que calcule o tempo aproximado de download de um arquivo dado seu
+area = float(input("Digite o tamanho da área (m2): "))
+
+# 2. Cálculos de base
+litros = (area * 1.10) / 6  # Área com 10% de folga dividida pelo rendimento
+
+Cálculo das opções 
+latas_apenas = litros / 18
+galoes_apenas = litros / 3.6
+
+ Cálculo do Mix 
+latas_mix = int(litros / 18)         
+galoes_mix = (litros % 18) / 3.6      #
+
+Preços
+preco_latas = latas_apenas * 80
+preco_galoes = galoes_apenas * 25
+preco_mix = (latas_mix * 80) + (galoes_mix * 25)
+
+ Resultados
+print(f"Litros necessários: {litros:.2f}")
+print(f"Apenas latas: {latas_apenas:.2f} unidades - R$ {preco_latas:.2f}")
+print(f"Apenas galões: {galoes_apenas:.2f} unidades - R$ {preco_galoes:.2f}")
+print(f"Mix: {latas_mix} latas e {galoes_mix:.2f} galões - R$ {preco_mix:.2f}")
+
+
+24. Faça um programa que calcule o tempo aproximado de download de um arquivo dado seu
 tamanho (MB) e velocidade da internet (Mbps).
+
+MB = float(input("Informe tamanho do arquivo: "))
+Mbps = float(input("Informe sua internet: "))
+MB *= 8
+tempDonw = MB / Mbps
+minutos = tempDonw /60
+print(f'tempo para down: {minutos:.2f}')
+
+
