@@ -156,7 +156,7 @@ print(f'Preço: {precolata:.2f}')
 melhor opção com 10% de folga.
 area = float(input("Digite o tamanho da área (m2): "))
 
-# 2. Cálculos de base
+ 2. Cálculos de base
 litros = (area * 1.10) / 6  # Área com 10% de folga dividida pelo rendimento
 
 Cálculo das opções 
